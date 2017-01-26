@@ -58,8 +58,7 @@ project.pro.forEach(function(name)
      var dates=HTMLprojectDates.replace("%data%",name.dates);
      var des=HTMLprojectDescription.replace("%data%",name.description);
      var image =HTMLprojectImage.replace("%data%",name.image);
-  project1.append(title,dates,des,image);
-
+  $(".project-entry:last").append(title,dates,des,image);
 	});
 
 
